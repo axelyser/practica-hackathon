@@ -1,0 +1,58 @@
+
+body {
+    background: #eef2ff;
+    font-family: Arial, sans-serif;
+    padding: 30px;
+}
+
+.app {
+    max-width: 550px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px #0001;
+}
+
+input, select, button {
+    padding: 12px;
+    margin: 5px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    background: #f8fafc;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+}
+
+li.completada {
+    opacity: 0.55;
+    text-decoration: line-through;
+}
+
+li span {
+    flex: 1;
+    overflow-wrap: anywhere;
+}
+
+li button {
+    background: #dc2626;
+}

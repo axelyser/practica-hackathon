@@ -4,38 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi primera aplicación</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 60px;
-            background: #f0f4ff;
-        }
-
-        button {
-            padding: 12px 25px;
-            background: #2563eb;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-        }
-    </style>
+    <title>Organizador de tareas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>¡Mi primera aplicación web!</h1>
-    <p>Preparándome para hack.exe 2026</p>
+    <main class="app">
+        <h1>Mis tareas</h1>
+        <p>Organizá tus actividades fácilmente.</p>
 
-    <button onclick="saludar()">Hacé clic aquí</button>
+        <form id="formulario">
+            <input id="tarea" type="text"
+                   placeholder="Escribí una tarea..."
+                   required maxlength="100">
 
-    <p id="resultado"></p>
+            <select id="prioridad">
+                <option value="Alta">Alta</option>
+                <option value="Media" selected>Media</option>
+                <option value="Baja">Baja</option>
+            </select>
 
-    <script>
-        function saludar() {
-            document.getElementById("resultado").textContent =
-                "¡El botón funciona correctamente!";
-        }
-    </script>
+            <button type="submit">Agregar tarea</button>
+        </form>
+
+        <p id="contador"></p>
+        <ul id="lista"></ul>
+    </main>
 </body>
 </html>
