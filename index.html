@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera aplicación</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 60px;
+            background: #f0f4ff;
+        }
+
+        button {
+            padding: 12px 25px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>¡Mi primera aplicación web!</h1>
+    <p>Preparándome para hack.exe 2026</p>
+
+    <button onclick="saludar()">Hacé clic aquí</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function saludar() {
+            document.getElementById("resultado").textContent =
+                "¡El botón funciona correctamente!";
+        }
+    </script>
+</body>
+</html>
